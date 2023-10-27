@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "db9d5919-a08c-483f-b3d2-0b2d977f5031",
+		"name": "quizApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29657410"
+	},
+	"item": [
+		{
+			"name": "Question",
+			"item": [
+				{
+					"name": "allQuestions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/question/allQuestions"
+					},
+					"response": []
+				},
+				{
+					"name": "addQuestion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"questionTitle\": \"question title here\",\n        \"option1\": \"option1 here\",\n        \"option2\": \"option2 here\",\n        \"option3\": \"option3 here\",\n        \"option4\": \"option4 here\",\n        \"category\": \"category here\",\n        \"rightAnswer\": \"rightAnswer here\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/question"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteQuestionById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/question/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quiz",
+			"item": [
+				{
+					"name": "CreateJavaQuiz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\" : \"springboot\",\n    \"numQ\" : 5,\n    \"title\" : \"SQuiz\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/quiz"
+					},
+					"response": []
+				},
+				{
+					"name": "CreateSpringBootQuiz",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\" : \"springboot\",\n    \"numQ\" : 5,\n    \"title\" : \"SQuiz\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/quiz"
+					},
+					"response": []
+				},
+				{
+					"name": "allQuizs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/quiz"
+					},
+					"response": []
+				},
+				{
+					"name": "getQuizById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/quiz/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
