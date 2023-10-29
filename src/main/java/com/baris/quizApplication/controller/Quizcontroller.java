@@ -16,7 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("quiz")
 @RequiredArgsConstructor
-public class Quizcontroller {private final QuizService quizService;
+public class Quizcontroller {
+    private final QuizService quizService;
     private final QuizRepository quizRepository;
 
     @ResponseStatus(HttpStatus.CREATED)
