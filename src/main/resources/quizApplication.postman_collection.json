@@ -57,7 +57,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"category\" : \"java\",\n    \"numQ\" : 5,\n    \"title\" : \"SQuiz\"\n}\n",
+							"raw": "{\n    \"category\" : \"java\",\n    \"numQ\" : 5,\n    \"title\" : \"JQuiz\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
