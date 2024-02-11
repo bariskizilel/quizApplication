@@ -103,6 +103,25 @@
 						"url": "http://localhost:8080/quiz/1"
 					},
 					"response": []
+				},
+				{
+					"name": "CalculateResult",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  { \"choice\" : \"class variables, instance variables\" },\n  { \"choice\" : \"not defined\" },\n  { \"choice\" : \"Boolean\" },\n  { \"choice\" : \"By default, variables, methods and constructors can be accessed by subclass only.\" },\n  { \"choice\" : \"Dynamic Binding.\" }\n]  "
+						},
+						"url": "http://localhost:8080/quiz/1"
+					},
+					"response": []
 				}
 			]
 		}

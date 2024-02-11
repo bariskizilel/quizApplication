@@ -58,9 +58,8 @@ public class QuizService {
         int i = 0;
 
         for(Response response : responses){
-            if(response.getResponse().equals(questions.get(i).getRightAnswer()))
+            if(response.getChoice().equals(questions.get(i).getRightAnswer()))
                 right++;
-
             i++;
         }
         return new ResponseEntity<>(right, HttpStatus.OK);
